@@ -27,7 +27,7 @@ class AboutActivity : AppCompatActivity() {
 
         imageViewProfile.setImageResource(R.drawable.profile_picture)
         textViewName.text = "Wiridlangit Suluh Jiwangga"
-        textViewEmail.text = "wiridlangit@gmail.com"
+        textViewEmail.text = "example@gmail.com"
 
     }
 }
