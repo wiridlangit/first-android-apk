@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     private lateinit var contactAdapter: ContactAdapter
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        val recyclerView: RecyclerView = findViewById(R.id.recyclerViewContacts)
+        recyclerView = findViewById(R.id.recyclerViewContacts)
         recyclerView.layoutManager = LinearLayoutManager(this)
         contactAdapter = ContactAdapter(this, getDummyContacts())
         recyclerView.adapter = contactAdapter
